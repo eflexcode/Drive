@@ -6,9 +6,10 @@ import lombok.Data;
 
 @Data
 public class CreateUserPayload {
+
+    @JsonProperty("username")
     private String username;
     @JsonProperty("password")
-    @JsonIgnore
     private String password;
     @JsonProperty("fullname")
     private String fullname;

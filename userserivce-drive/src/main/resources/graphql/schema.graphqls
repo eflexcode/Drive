@@ -1,0 +1,18 @@
+scalar DateTime
+
+type Query {
+    getUser(id :Int): User
+}
+
+type User {
+    id: ID!
+    username: String!
+    fullname: String!
+    pictureUrl: String!
+    phoneNumber: String!
+    latitude: Int!
+    longitude : Int!
+    createdAt  : DateTime!
+    updatedAt: DateTime!
+}
+

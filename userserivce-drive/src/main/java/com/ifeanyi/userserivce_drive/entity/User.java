@@ -11,13 +11,13 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-@Entity
+@Entity(name = "users")
 public class User {
 
     @JsonProperty("id")
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer userId;
+    private Integer id;
     @JsonProperty("username")
     private String username;
     @JsonProperty("password")
@@ -30,9 +30,9 @@ public class User {
     @JsonProperty("phone_number")
     private String phoneNumber;
     @JsonProperty("latitude")
-    private Integer latitude;
+    private Long latitude;
     @JsonProperty("longitude")
-    private Integer longitude;
+    private Long longitude;
     @JsonProperty("created_at")
     private Date createdAt;
     @JsonProperty("updated_at")

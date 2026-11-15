@@ -1,3 +1,15 @@
 spring:
   application:
     name: userserivce-drive
+  datasource:
+    url: jdbc:postgresql://localhost:5432/drive-user
+    password: 12345
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect

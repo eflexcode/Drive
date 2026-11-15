@@ -11,7 +11,6 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-@Entity
 public class UpdateUserPayload {
 
     @JsonProperty("fullname")

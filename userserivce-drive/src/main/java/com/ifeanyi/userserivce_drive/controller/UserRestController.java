@@ -29,7 +29,7 @@ public class UserRestController {
 
     @GetMapping("get-by-id/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public User getUser(@PathVariable(name = "id")Integer id) {
+    public User getUser(@PathVariable(name = "id") Integer id) {
         return userService.getUser(id);
     }
 
@@ -80,4 +80,5 @@ public class UserRestController {
     public StandardResponse changeUsername(@RequestBody ChangeUsername changeUsername) {
         return userService.changeUsername(changeUsername);
     }
+
 }
